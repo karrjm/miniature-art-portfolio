@@ -1,0 +1,27 @@
+:root {
+    font-family: 'IBM Plex Mono', sans-serif;
+    font-style: italic;
+    background-color: #f0f8e2;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+section {
+    columns: auto;
+    column-gap: 0em;
+    column-width: 8em;
+    overflow: hidden;
+}
+
+img {
+    width: 130%;
+    opacity: 0;
+    transition: all 1s linear;
+}
+
+img:hover,
+img:focus {
+    opacity: 1;
+    transition: all .25s ease-out;
+    z-index: 999;
+}
